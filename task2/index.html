@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Login</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- Font Icons -->
+
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  background-size: cover;
+}
+
+/* Navbar */
+header{
+  text-align: center;
+  margin: 5em;
+}
+.navbar a{
+  text-decoration: none;
+  color: #ffeba7;
+  background-color: #333;
+  padding: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.navbar .login{
+  border-radius: 40px 0 0 40px;
+}
+.navbar .regis{
+  border-radius: 0 40px 40px 0;
+}
+#active{
+  background-color: #ffeba7;
+  color: #333;
+}
+
+/* Login Form */
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  background-color: #1f2029;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.title{
+  font-size: 30px;
+  color: #ffeba7;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.flex{
+  display: flex;
+  gap: 6px;
+}
+
+.form .input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #3333338c;
+}
+.form .input:focus{
+  border: 0;
+  outline: 2px solid #ffeba7;
+}
+
+.form .submit{
+  padding: 10px;
+  background-color: #ffeba7;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: .3s all linear;
+}
+.form .submit:hover{
+  background-color: #333;
+  color: #ffeba7;
+  border: 2px solid #ffeba7;
+}
+
+/* Icons */
+.icons{
+  margin: 15px 0px;
+}
+.icon{
+  color: #fff;
+  font-size: 25px;
+  margin-right: 18px;
+}
+
+/* Footer */
+.footer{
+  color: #fff;
+  font-size: 14px;
+}
+.footer a{
+  color: rgb(0, 120, 218);
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <a class="login" href="index.html">Log In</a>
+        <a class="regis" id="active" href="register.html">Register</a>
+    </nav>
+</header>
+
+
+<!-- Log In Form -->
+
+<section>
+    <form class="form" action="" method="post">
+        
+        <P class="title">Login</P>
+
+
+        <div class="flex">
+
+
+        </div>
+
+        <input class="input" type="email" placeholder="Email" required>
+
+        <input class="input" type="password" placeholder="Password" required>
+
+        <input class="submit" type="submit" value="Login">
+
+        <div class="icons">
+            <a class="icon" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="icon" href="#"><i class="fa-brands fa-google"></i></a>
+            <a class="icon" href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <p class="footer">New Account  &nbsp; <a href="register.html">Register</a></p>
+
+    </form>
+</section>
+
+
+
+    
+
+
+</body>
+</html>
